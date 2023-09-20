@@ -9,13 +9,106 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        VStack(){
+            HStack(){
+                HStack(){
+                    Image(systemName: "person")
+                        .imageScale(.large)
+                        .foregroundColor(Color("darkText"))
+                        .padding(12)
+                        .background(Color.white)
+                        .cornerRadius(50)
+                    Text("Hola, Aurelio ").foregroundColor(Color.white).fontWeight(.semibold)
+                    Image(systemName: "chevron.right")
+                        .imageScale(.small)
+                        .foregroundColor(Color.white)
+                }
+                Spacer()
+                HStack(){
+                    // questionmark.circle
+                    Image(systemName: "questionmark.circle")
+                        .imageScale(.large)
+                        .foregroundColor(Color.white)
+                    Text("Ayuda")
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                }
+                .padding(10)
+                .background(Color.cyan)
+                .cornerRadius(5)
+            }.padding()
+            
+            ScrollView{
+                VStack(){
+                    VStack(){
+                        HStack(){
+                            Text("Disponible invertido en")
+                            Text("GBM").fontWeight(.semibold)
+                            Spacer()
+                        }.font(.system(size: 16))
+                        HStack(){
+                            Text("$").fontWeight(.bold).font(.system(size: 28))
+                            Text("8,953").fontWeight(.bold).font(.system(size: 28))
+                            Image(systemName: "eye")
+                                .imageScale(.large)
+                                .foregroundColor(Color.black)
+                            Spacer()
+                            HStack(){
+                                // arrowtriangle.up.fill
+                                Image(systemName: "arrowtriangle.up.fill")
+                                    .imageScale(.medium)
+                                Text("10.3%").fontWeight(.bold)
+                            }
+                            .foregroundColor(Color.green)
+                            .padding(5)
+                            .background(Color("bgButtons"))
+                            .cornerRadius(50)
+                            
+                            Image(systemName: "chevron.right")
+                                .imageScale(.medium)
+                                .foregroundColor(Color.gray)
+                        }.padding(.top, 1)
+                    }
+                    .padding(20)
+                    
+                    Divider()
+                    
+                    VStack(){
+                        HStack(){
+                            ActionButtonView(text: "Ingresar", icon: "envelope")
+                            ActionButtonView(text: "Transferir", icon: "envelope")
+                            ActionButtonView(text: "Sacar", icon: "envelope")
+                            ActionButtonView(text: "Tu CLABE", icon: "envelope")
+                        }
+                        
+                        HStack(){
+                            Text("Aurelio")
+                            Spacer()
+                            Text("Aurelio")
+                        }
+                        .padding(20)
+                        .background(Color("bgCreditCardPrimary"))
+                        .cornerRadius(8)
+                    }.padding(20)
+                }
+                .background(Color.white)
+                .cornerRadius(10)
+                
+            }.padding()
+            
+            Spacer()
+        }.background(LinearGradient(
+            gradient:
+                Gradient(
+                    colors:
+                        [
+                            Color("bgPrimary"),
+                            Color("bgPrimary"),
+                            Color("bgSecondary")
+                        ]),
+            startPoint: .top,
+            endPoint: .bottom
+        ))
     }
 }
 
