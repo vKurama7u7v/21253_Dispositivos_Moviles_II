@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B77C392E2ABB9C31007E80B0 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C392D2ABB9C31007E80B0 /* ActionButtonView.swift */; };
+		B77C39302ABBABF7007E80B0 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C392F2ABBABF7007E80B0 /* ButtonView.swift */; };
 		B7BB08A32ABAB59C000116CA /* _1253_ACT5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB08A22ABAB59C000116CA /* _1253_ACT5App.swift */; };
 		B7BB08A52ABAB59C000116CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB08A42ABAB59C000116CA /* ContentView.swift */; };
 		B7BB08A72ABAB5A5000116CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BB08A62ABAB5A5000116CA /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		B77C392D2ABB9C31007E80B0 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		B77C392F2ABBABF7007E80B0 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B7BB089F2ABAB59C000116CA /* 21253_ACT5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 21253_ACT5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BB08A22ABAB59C000116CA /* _1253_ACT5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1253_ACT5App.swift; sourceTree = "<group>"; };
 		B7BB08A42ABAB59C000116CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				B7BB08A22ABAB59C000116CA /* _1253_ACT5App.swift */,
 				B7BB08A42ABAB59C000116CA /* ContentView.swift */,
+				B77C392F2ABBABF7007E80B0 /* ButtonView.swift */,
 				B77C392D2ABB9C31007E80B0 /* ActionButtonView.swift */,
 				B7BB08A62ABAB5A5000116CA /* Assets.xcassets */,
 				B7BB08A82ABAB5A5000116CA /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				B77C392E2ABB9C31007E80B0 /* ActionButtonView.swift in Sources */,
 				B7BB08A52ABAB59C000116CA /* ContentView.swift in Sources */,
+				B77C39302ABBABF7007E80B0 /* ButtonView.swift in Sources */,
 				B7BB08A32ABAB59C000116CA /* _1253_ACT5App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
