@@ -29,6 +29,7 @@ struct ButtonView: View {
             Text(text)
                 .font(.system(size: 12))
                 .fontWeight(.bold)
+                .multilineTextAlignment(.center)
             Spacer()
         }
         .padding(.horizontal, 4)

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isVisible : Bool = true
+        
     var body: some View {
         VStack(){
             // Información de Usuario
@@ -53,10 +56,18 @@ struct ContentView: View {
                         }.font(.system(size: 16))
                         HStack(){
                             Text("$").fontWeight(.bold).font(.system(size: 28))
-                            Text("8,953").fontWeight(.bold).font(.system(size: 28))
-                            Image(systemName: "eye")
-                                .imageScale(.large)
-                                .foregroundColor(Color.black)
+                            Text(isVisible ? "8,958" : "*****")
+                                .fontWeight(.bold)
+                                .font(.system(size: 28))
+                            Button(action: {
+                                // Funcion
+                                self.onClickButton()
+                            }){
+                                Image(systemName: isVisible ? "eye" : "eye.slash")
+                                    .imageScale(.large)
+                                    .foregroundColor(Color.black)
+                            }
+                            
                             Spacer()
                             HStack(){
                                 // arrowtriangle.up.fill
@@ -87,11 +98,48 @@ struct ContentView: View {
                         }
                         
                         HStack(){
-                            Text("Aurelio")
-                            Spacer()
-                            Text("Aurelio")
+                            VStack(){
+                                HStack(){
+                                    CardView(text: "debit", image: "https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png")
+                                    
+                                    CardView(text: "WALLET", image: "https://vectorseek.com/wp-content/uploads/2023/08/Mercado-Pago-Icon-Logo-Vector.svg-.png")
+                                    Spacer()
+                                }
+                                .padding(.bottom, 10)
+                                
+                                HStack(){
+                                    Text("Ir a mis tarjetas")
+                                        .font(.system(size: 16))
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.bold)
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                        .imageScale(.small)
+                                        .foregroundColor(Color.white)
+                                    
+                                }
+                            }
+                            .padding(20)
+                            .layoutPriority(2)
+                            
+                            VStack{
+                                VStack(){
+                                    Image(systemName: "creditcard")
+                                        .imageScale(.large)
+                                        .frame(width: 50, height: 50)
+                                        .background(Color("bgCreditCardButton"))
+                                        .foregroundColor(Color.white)
+                                        .cornerRadius(100)
+                                    Text("Tarjeta \n digital")
+                                        .font(.system(size: 14))
+                                        .foregroundColor(Color.gray)
+                                        .fontWeight(.semibold)
+                                }
+                                .padding(22)
+                                .background(Color("bgCreditCardSecondary"))
+                            }.layoutPriority(2)
                         }
-                        .padding(20)
+                        
                         .background(Color("bgCreditCardPrimary"))
                         .cornerRadius(8)
                     }.padding(20)
@@ -195,6 +243,12 @@ struct ContentView: View {
             endPoint: .bottom
         ))
         
+    }
+    
+    
+    // Definicion de funciones
+    func onClickButton() {
+        self.isVisible = !isVisible
     }
 }
 

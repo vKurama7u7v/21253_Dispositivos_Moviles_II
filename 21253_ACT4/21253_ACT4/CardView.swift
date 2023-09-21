@@ -26,6 +26,7 @@ extension String {
 struct CardView: View {
     
     // Variables
+    
     var text : String
     var color : Color
     var image : String

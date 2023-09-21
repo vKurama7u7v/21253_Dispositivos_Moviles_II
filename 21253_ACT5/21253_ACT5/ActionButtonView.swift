@@ -23,6 +23,7 @@ struct ActionButtonView: View {
             Text(text)
                 .font(.system(size: 12))
                 .fontWeight(.bold)
+                .multilineTextAlignment(.center)
         }.padding(.horizontal, 4).foregroundColor(Color.gray)
     }
 }
