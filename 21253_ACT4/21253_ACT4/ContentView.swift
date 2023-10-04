@@ -20,31 +20,37 @@ struct ContentView: View {
                     CardView(
                         text: "Easy",
                         color: Color.cyan,
+                        desc: "Texto 1",
                         image: "https://static.wikia.nocookie.net/geometry-dash/images/7/7a/Easy.png/revision/latest/scale-to-width-down/250?cb=20160709031747&path-prefix=es"
                     )
                     CardView(
                         text: "Normal",
                         color: Color.green,
+                        desc: "Texto 2",
                         image: "https://static.wikia.nocookie.net/geometry-dash/images/f/fb/Normal.png/revision/latest/scale-to-width-down/250?cb=20160709034359&path-prefix=es"
                     )
                     CardView(
                         text: "Hard",
                         color: Color.yellow,
+                        desc: "Texto 3",
                         image: "https://static.wikia.nocookie.net/geometry-dash/images/d/d5/Hard.png/revision/latest/scale-to-width-down/250?cb=20160803202209&path-prefix=es"
                     )
                     CardView(
                         text: "Harder",
                         color: Color.orange,
+                        desc: "Texto 1",
                         image: "https://static.wikia.nocookie.net/geometry-dash/images/d/db/Harder.png/revision/latest/scale-to-width-down/1000?cb=20160803202224&path-prefix=es"
                     )
                     CardView(
                         text: "Insane",
                         color: Color.pink,
+                        desc: "Texto 1",
                         image: "https://static.wikia.nocookie.net/geometry-dash/images/7/7f/Insane.png/revision/latest/scale-to-width-down/1000?cb=20160711205827&path-prefix=es"
                     )
                     CardView(
                         text: "Demon",
                         color: Color.red,
+                        desc: "Texto 1",
                         image: "https://static.wikia.nocookie.net/geometry-dash/images/c/c4/Demon.png/revision/latest/scale-to-width-down/1000?cb=20150630175828&path-prefix=es"
                     )
                 }

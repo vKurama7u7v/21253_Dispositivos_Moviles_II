@@ -7,28 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B71FA41E2AB91E7C00A13465 /* TrenesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FA41D2AB91E7C00A13465 /* TrenesApp.swift */; };
-		B71FA4202AB91E7C00A13465 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FA41F2AB91E7C00A13465 /* ContentView.swift */; };
-		B71FA4222AB91E7F00A13465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71FA4212AB91E7F00A13465 /* Assets.xcassets */; };
-		B71FA4252AB91E7F00A13465 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71FA4242AB91E7F00A13465 /* Preview Assets.xcassets */; };
-		B71FA42C2AB9210700A13465 /* TrainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FA42B2AB9210700A13465 /* TrainCardView.swift */; };
-		B7C70E602AC2563B000E2A7F /* MeansOfTransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C70E5F2AC2563B000E2A7F /* MeansOfTransportView.swift */; };
-		B7C70E622AC258CF000E2A7F /* CardViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C70E612AC258CF000E2A7F /* CardViewModifier.swift */; };
+		B77F2A072ACB90A4009518BD /* PantallasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F2A062ACB90A4009518BD /* PantallasApp.swift */; };
+		B77F2A092ACB90A5009518BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F2A082ACB90A5009518BD /* ContentView.swift */; };
+		B77F2A0B2ACB90AB009518BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77F2A0A2ACB90AB009518BD /* Assets.xcassets */; };
+		B77F2A0E2ACB90AB009518BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77F2A0D2ACB90AB009518BD /* Preview Assets.xcassets */; };
+		B77F2A152ACB926F009518BD /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F2A142ACB926F009518BD /* ItemRowView.swift */; };
+		B77F2A172ACB9287009518BD /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F2A162ACB9287009518BD /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B71FA41A2AB91E7C00A13465 /* Trenes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trenes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B71FA41D2AB91E7C00A13465 /* TrenesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrenesApp.swift; sourceTree = "<group>"; };
-		B71FA41F2AB91E7C00A13465 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B71FA4212AB91E7F00A13465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B71FA4242AB91E7F00A13465 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B71FA42B2AB9210700A13465 /* TrainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCardView.swift; sourceTree = "<group>"; };
-		B7C70E5F2AC2563B000E2A7F /* MeansOfTransportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeansOfTransportView.swift; sourceTree = "<group>"; };
-		B7C70E612AC258CF000E2A7F /* CardViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModifier.swift; sourceTree = "<group>"; };
+		B77F2A032ACB90A4009518BD /* Pantallas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pantallas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77F2A062ACB90A4009518BD /* PantallasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallasApp.swift; sourceTree = "<group>"; };
+		B77F2A082ACB90A5009518BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B77F2A0A2ACB90AB009518BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B77F2A0D2ACB90AB009518BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B77F2A142ACB926F009518BD /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		B77F2A162ACB9287009518BD /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B71FA4172AB91E7C00A13465 /* Frameworks */ = {
+		B77F2A002ACB90A4009518BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +36,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B71FA4112AB91E7C00A13465 = {
+		B77F29FA2ACB90A4009518BD = {
 			isa = PBXGroup;
 			children = (
-				B71FA41C2AB91E7C00A13465 /* Trenes */,
-				B71FA41B2AB91E7C00A13465 /* Products */,
+				B77F2A052ACB90A4009518BD /* Pantallas */,
+				B77F2A042ACB90A4009518BD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B71FA41B2AB91E7C00A13465 /* Products */ = {
+		B77F2A042ACB90A4009518BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B71FA41A2AB91E7C00A13465 /* Trenes.app */,
+				B77F2A032ACB90A4009518BD /* Pantallas.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B71FA41C2AB91E7C00A13465 /* Trenes */ = {
+		B77F2A052ACB90A4009518BD /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
-				B71FA41D2AB91E7C00A13465 /* TrenesApp.swift */,
-				B71FA41F2AB91E7C00A13465 /* ContentView.swift */,
-				B7C70E612AC258CF000E2A7F /* CardViewModifier.swift */,
-				B7C70E5F2AC2563B000E2A7F /* MeansOfTransportView.swift */,
-				B71FA42B2AB9210700A13465 /* TrainCardView.swift */,
-				B71FA4212AB91E7F00A13465 /* Assets.xcassets */,
-				B71FA4232AB91E7F00A13465 /* Preview Content */,
+				B77F2A062ACB90A4009518BD /* PantallasApp.swift */,
+				B77F2A082ACB90A5009518BD /* ContentView.swift */,
+				B77F2A142ACB926F009518BD /* ItemRowView.swift */,
+				B77F2A162ACB9287009518BD /* ItemDetailView.swift */,
+				B77F2A0A2ACB90AB009518BD /* Assets.xcassets */,
+				B77F2A0C2ACB90AB009518BD /* Preview Content */,
 			);
-			path = Trenes;
+			path = Pantallas;
 			sourceTree = "<group>";
 		};
-		B71FA4232AB91E7F00A13465 /* Preview Content */ = {
+		B77F2A0C2ACB90AB009518BD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B71FA4242AB91E7F00A13465 /* Preview Assets.xcassets */,
+				B77F2A0D2ACB90AB009518BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,39 +76,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B71FA4192AB91E7C00A13465 /* Trenes */ = {
+		B77F2A022ACB90A4009518BD /* Pantallas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B71FA4282AB91E7F00A13465 /* Build configuration list for PBXNativeTarget "Trenes" */;
+			buildConfigurationList = B77F2A112ACB90AB009518BD /* Build configuration list for PBXNativeTarget "Pantallas" */;
 			buildPhases = (
-				B71FA4162AB91E7C00A13465 /* Sources */,
-				B71FA4172AB91E7C00A13465 /* Frameworks */,
-				B71FA4182AB91E7C00A13465 /* Resources */,
+				B77F29FF2ACB90A4009518BD /* Sources */,
+				B77F2A002ACB90A4009518BD /* Frameworks */,
+				B77F2A012ACB90A4009518BD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Trenes;
-			productName = Trenes;
-			productReference = B71FA41A2AB91E7C00A13465 /* Trenes.app */;
+			name = Pantallas;
+			productName = Pantallas;
+			productReference = B77F2A032ACB90A4009518BD /* Pantallas.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B71FA4122AB91E7C00A13465 /* Project object */ = {
+		B77F29FB2ACB90A4009518BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					B71FA4192AB91E7C00A13465 = {
+					B77F2A022ACB90A4009518BD = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = B71FA4152AB91E7C00A13465 /* Build configuration list for PBXProject "Trenes" */;
+			buildConfigurationList = B77F29FE2ACB90A4009518BD /* Build configuration list for PBXProject "Pantallas" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +116,44 @@
 				en,
 				Base,
 			);
-			mainGroup = B71FA4112AB91E7C00A13465;
-			productRefGroup = B71FA41B2AB91E7C00A13465 /* Products */;
+			mainGroup = B77F29FA2ACB90A4009518BD;
+			productRefGroup = B77F2A042ACB90A4009518BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B71FA4192AB91E7C00A13465 /* Trenes */,
+				B77F2A022ACB90A4009518BD /* Pantallas */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B71FA4182AB91E7C00A13465 /* Resources */ = {
+		B77F2A012ACB90A4009518BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71FA4252AB91E7F00A13465 /* Preview Assets.xcassets in Resources */,
-				B71FA4222AB91E7F00A13465 /* Assets.xcassets in Resources */,
+				B77F2A0E2ACB90AB009518BD /* Preview Assets.xcassets in Resources */,
+				B77F2A0B2ACB90AB009518BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B71FA4162AB91E7C00A13465 /* Sources */ = {
+		B77F29FF2ACB90A4009518BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71FA4202AB91E7C00A13465 /* ContentView.swift in Sources */,
-				B71FA41E2AB91E7C00A13465 /* TrenesApp.swift in Sources */,
-				B7C70E622AC258CF000E2A7F /* CardViewModifier.swift in Sources */,
-				B7C70E602AC2563B000E2A7F /* MeansOfTransportView.swift in Sources */,
-				B71FA42C2AB9210700A13465 /* TrainCardView.swift in Sources */,
+				B77F2A172ACB9287009518BD /* ItemDetailView.swift in Sources */,
+				B77F2A092ACB90A5009518BD /* ContentView.swift in Sources */,
+				B77F2A072ACB90A4009518BD /* PantallasApp.swift in Sources */,
+				B77F2A152ACB926F009518BD /* ItemRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B71FA4262AB91E7F00A13465 /* Debug */ = {
+		B77F2A0F2ACB90AB009518BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		B71FA4272AB91E7F00A13465 /* Release */ = {
+		B77F2A102ACB90AB009518BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -271,14 +267,14 @@
 			};
 			name = Release;
 		};
-		B71FA4292AB91E7F00A13465 /* Debug */ = {
+		B77F2A122ACB90AB009518BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Trenes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Pantallas/Preview Content\"";
 				DEVELOPMENT_TEAM = AKBHK24QUB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -292,7 +288,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.iest.Trenes;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iest.Pantallas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,14 +296,14 @@
 			};
 			name = Debug;
 		};
-		B71FA42A2AB91E7F00A13465 /* Release */ = {
+		B77F2A132ACB90AB009518BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Trenes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Pantallas/Preview Content\"";
 				DEVELOPMENT_TEAM = AKBHK24QUB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -321,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.iest.Trenes;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.iest.Pantallas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,25 +328,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B71FA4152AB91E7C00A13465 /* Build configuration list for PBXProject "Trenes" */ = {
+		B77F29FE2ACB90A4009518BD /* Build configuration list for PBXProject "Pantallas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B71FA4262AB91E7F00A13465 /* Debug */,
-				B71FA4272AB91E7F00A13465 /* Release */,
+				B77F2A0F2ACB90AB009518BD /* Debug */,
+				B77F2A102ACB90AB009518BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B71FA4282AB91E7F00A13465 /* Build configuration list for PBXNativeTarget "Trenes" */ = {
+		B77F2A112ACB90AB009518BD /* Build configuration list for PBXNativeTarget "Pantallas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B71FA4292AB91E7F00A13465 /* Debug */,
-				B71FA42A2AB91E7F00A13465 /* Release */,
+				B77F2A122ACB90AB009518BD /* Debug */,
+				B77F2A132ACB90AB009518BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B71FA4122AB91E7C00A13465 /* Project object */;
+	rootObject = B77F29FB2ACB90A4009518BD /* Project object */;
 }

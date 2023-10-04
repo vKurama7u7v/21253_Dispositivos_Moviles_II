@@ -26,10 +26,12 @@ extension String {
 struct CardView: View {
     
     // Variables
-    
     var text : String
     var color : Color
+    var desc : String
     var image : String
+    
+    @State var showText : Bool = false
     
     var body: some View {
         VStack(){
@@ -48,14 +50,18 @@ struct CardView: View {
                     
                     HStack(){
                         Spacer()
-                        Text("+ INFO")
-                            .font(.custom("PressStart2P-Regular", size: 12))
-                            .foregroundColor(Color.white)
-                            .padding()
-                            .background(Color.black)
-                            .cornerRadius(50)
-                            .padding(.top, 15)
-                            
+                        Button(action: {
+                            // Funcion
+                            self.onClickButton()
+                        }){
+                            Text("+ INFO")
+                                .font(.custom("PressStart2P-Regular", size: 12))
+                                .foregroundColor(Color.white)
+                                .padding()
+                                .background(Color.black)
+                                .cornerRadius(50)
+                                .padding(.top, 15)
+                        }
                         Spacer()
                     }
                 }
@@ -73,10 +79,27 @@ struct CardView: View {
                 Spacer()
             }
             .padding()
-            .background(Color("bgCard"))
-            .cornerRadius(4)
+
             
-        }.padding(.vertical, 4)
+            HStack(){
+                Text(desc)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 14))
+                    .fontWeight(.medium)
+                    .opacity(showText ? 1 : 0)
+            }
+            .padding(.bottom, showText ? 20 : 0)
+            .padding(.horizontal, showText ? 20 : 0)
+        }
+        .padding(.vertical, 4)
+        .background(Color("bgCard"))
+        .cornerRadius(4)
+        
+    }
+    
+    // Definicion de funciones
+    func onClickButton() {
+        self.showText = !showText
     }
 }
 
@@ -85,6 +108,7 @@ struct CardView_Previews: PreviewProvider {
         CardView(
             text: "Dificultad",
             color: Color.white,
+            desc: "Hola que hace?",
             image: "https://static.wikia.nocookie.net/geometry-dash/images/f/f1/Na.png/revision/latest?cb=20150923210206&path-prefix=es"
         )
     }
