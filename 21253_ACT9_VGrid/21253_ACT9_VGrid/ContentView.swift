@@ -7,61 +7,41 @@
 
 import SwiftUI
 
-
-// ===== Cargar una IMG de una URL =====
-extension String {
-    func loadImg() -> UIImage {
-        do{
-            // Convert IMG to URL
-            guard let url = URL(string: self) else {
-                return UIImage()
-            }
-            
-            let data : Data = try Data(contentsOf: url)
-            return UIImage(data: data) ?? UIImage()
-        } catch {}
-        
-        return UIImage()
-    }
-}
-
 struct ContentView: View {
     
-    var img : String = "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+    // Students Data
+    let studentsViewModel = StudentModelView().dummyData()
     
-    var char : String = "@iest.edu.mx"
+    // URL Image
+    let icon = "https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+
+    // GridLayout
+    let columns = [
+        GridItem(.flexible(minimum: 300))
+    ]
     
     var body: some View {
         VStack {
-            HStack(alignment: .top){
-                VStack(){
-                    Image(uiImage: img.loadImg())
-                        .resizable()
-                        .aspectRatio(contentMode: .fit )
-                        .frame(width: 80, height: 80)
-                        .cornerRadius(100)
-                    Text("21253")
-                        .font(.system(size: 12))
-                        .foregroundColor(Color.white)
-                        .fontWeight(.bold)
-                }
-                Spacer()
-                HStack(){
-                    VStack(alignment: .trailing, spacing: 5){
-                        Text("Aurelio Marín Bautista")
-                            .foregroundColor(Color.white)
-                            .font(.system(size: 16))
-                            .fontWeight(.bold)
-                        Text("aurelio.marin\(char)")
-                            .foregroundColor(Color("ColorYellow"))
+            // SearchView
+            
+            // List of Students
+            ScrollView(){
+                GeometryReader() { geometry in
+                    LazyVGrid(columns: columns, spacing: 10) {
+                        ForEach(studentsViewModel) { student in
+                            CardView(
+                                icon: icon,
+                                id_iest: student.id_iest,
+                                full_name: student.full_name,
+                                email: student.email,
+                                career: student.career
+                            )
+                        }
                     }
                 }
             }
-            .padding()
-            .background(Color("ColorBrown"))
-            .cornerRadius(20)
-        }
-        .padding()
+            
+        }.padding(.horizontal, 10)
     }
 }
 
