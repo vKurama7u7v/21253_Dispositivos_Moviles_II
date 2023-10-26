@@ -28,7 +28,9 @@ struct ContentView: View {
             ScrollView(){
                 GeometryReader() { geometry in
                     LazyVGrid(columns: columns, spacing: 10) {
-                        ForEach(studentsViewModel) { student in
+                        
+                        ForEach(Array(studentsViewModel.enumerated()), id: \.offset) {index, student in
+                            
                             CardView(
                                 icon: icon,
                                 id_iest: student.id_iest,
@@ -37,6 +39,7 @@ struct ContentView: View {
                                 career: student.career
                             )
                         }
+                        
                     }
                 }
             }
