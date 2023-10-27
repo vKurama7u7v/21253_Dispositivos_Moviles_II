@@ -14,6 +14,8 @@ struct StudentModelView {
         
         // Creamos nuetro array de objetos, con ayuda de nuestro modelo Student
         let students: [Student] = [
+            Student(id_iest: 21133, full_name: "HECTOR JESUS GONZALEZ HARO", email: "hector.gonzalez@iest.edu.mx", career: "ISND (2016)"),
+            Student(id_iest: 21142, full_name: "ANTONIO HUMBERTO ABREGO ZAMORA", email: "antonio.abrego@iest.edu.mx", career: "ISND (2016)"),
             Student(id_iest: 21239, full_name: "MIGUEL ANGEL PEREZ PATIÑO", email: "miguelangel.perez@iest.edu.mx", career: "ISND (2016)"),
             Student(id_iest: 21253, full_name: "AURELIO MARIN BAUTISTA", email: "aurelio.marin@iest.edu.mx", career: "ISND (2016)"),
         ]

@@ -14,6 +14,8 @@
 		B77A510D2AE72A6800C965E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A510C2AE72A6800C965E4 /* ContentView.swift */; };
 		B77A510F2AE72A6B00C965E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77A510E2AE72A6B00C965E4 /* Assets.xcassets */; };
 		B77A51122AE72A6B00C965E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77A51112AE72A6B00C965E4 /* Preview Assets.xcassets */; };
+		B7A6BEE92AEC16720071F37B /* CustomModifierDeviceRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6BEE82AEC16720071F37B /* CustomModifierDeviceRotation.swift */; };
+		B7A6BEEB2AEC21B00071F37B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6BEEA2AEC21B00071F37B /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		B77A510C2AE72A6800C965E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B77A510E2AE72A6B00C965E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B77A51112AE72A6B00C965E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7A6BEE82AEC16720071F37B /* CustomModifierDeviceRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifierDeviceRotation.swift; sourceTree = "<group>"; };
+		B7A6BEEA2AEC21B00071F37B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B70459FC2AE78C030059E2BA /* CardView.swift */,
+				B7A6BEEA2AEC21B00071F37B /* SearchView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 			children = (
 				B77A510A2AE72A6800C965E4 /* _1253_ACT9_VGridApp.swift */,
 				B77A510C2AE72A6800C965E4 /* ContentView.swift */,
+				B7A6BEE72AEC164A0071F37B /* Modifiers */,
 				B70459FB2AE78BCC0059E2BA /* Components */,
 				B70459F82AE7826B0059E2BA /* ModelsViews */,
 				B70459F52AE7823E0059E2BA /* Models */,
@@ -98,6 +104,14 @@
 				B77A51112AE72A6B00C965E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7A6BEE72AEC164A0071F37B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				B7A6BEE82AEC16720071F37B /* CustomModifierDeviceRotation.swift */,
+			);
+			name = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +187,8 @@
 				B70459FA2AE782930059E2BA /* StudentModelView.swift in Sources */,
 				B77A510D2AE72A6800C965E4 /* ContentView.swift in Sources */,
 				B70459F72AE7824E0059E2BA /* Student.swift in Sources */,
+				B7A6BEEB2AEC21B00071F37B /* SearchView.swift in Sources */,
+				B7A6BEE92AEC16720071F37B /* CustomModifierDeviceRotation.swift in Sources */,
 				B77A510B2AE72A6800C965E4 /* _1253_ACT9_VGridApp.swift in Sources */,
 				B70459FD2AE78C030059E2BA /* CardView.swift in Sources */,
 			);

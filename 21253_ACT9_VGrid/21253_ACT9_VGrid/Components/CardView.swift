@@ -31,15 +31,28 @@ struct CardView: View {
     var full_name : String
     var email : String
     var career : String
+    var index : Int
+    
+    @State var isVisible = false
+    var image = "https://sie.iest.edu.mx/iestdesk/assets/images/elements/student.png"
+    
+    func onChangeImage() {
+        self.isVisible = !isVisible
+    }
     
     var body: some View {
         HStack(alignment: .top){
             VStack(){
-                Image(uiImage: icon.loadImg())
-                    .resizable()
-                    .aspectRatio(contentMode: .fit )
-                    .frame(width: 60, height: 60)
-                    .cornerRadius(100)
+                Button(action: {
+                    onChangeImage()
+                }) {
+                    Image(uiImage: isVisible ? icon.loadImg() : image.loadImg())
+                        .resizable()
+                        .aspectRatio(contentMode: .fit )
+                        .frame(width: 60, height: 60)
+                        .cornerRadius(100)
+                }
+                
                 Text(String(id_iest))
                     .font(.system(size: 12))
                     .foregroundColor(Color.white)
@@ -53,8 +66,10 @@ struct CardView: View {
                         .font(.system(size: 16))
                         .fontWeight(.bold)
                         .padding(.top, 5)
+                        .lineLimit(1)
                     Text(email)
                         .foregroundColor(Color("ColorYellow"))
+                        .lineLimit(1)
                     Text(career)
                         .foregroundColor(Color.white)
                         .font(.system(size: 14))
@@ -65,7 +80,11 @@ struct CardView: View {
             Spacer()
         }
         .padding()
-        .background(Color("ColorBrown"))
+        .background(
+            index % 2 == 0 ?
+            Color("ColorBrown2") :
+            Color("ColorBrown")
+        )
         .cornerRadius(10)
     }
 }
@@ -77,6 +96,9 @@ struct CardView_Previews: PreviewProvider {
             id_iest: 21253,
             full_name: "AURELIO MARIN BAUTISTA",
             email: "aurelio.marin@iest.edu.mx",
-            career: "INSD (2016)")
+            career: "INSD (2016)",
+            index: 1
+        )
+        
     }
 }
